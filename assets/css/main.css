@@ -644,6 +644,10 @@ ul.language-select > li, ul.footer-menu > li {
     display: none;
 }
 
+.copyright {
+    font-size: 0.84rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 840px) {
