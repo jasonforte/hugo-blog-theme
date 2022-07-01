@@ -12,13 +12,13 @@
             <header>
                 <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">{{ trim .Title  " " }}</h1>
 
+                {{ partial "post-info.html" . }}
                 {{ partial "post-language-switcher.html" . }}
             </header>
         </div>
         <div class="content e-content">
             {{ .Content }}
         </div>
-        {{ partial "post-info.html" . }}
     </article>
 
     {{ if and (.Site.Params.paginationSinglePost) (ne .Type "page") }}
