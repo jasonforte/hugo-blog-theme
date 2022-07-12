@@ -4,6 +4,10 @@
         {{ partial "language-switcher.html" . }}
     {{ end }}
 
+    {{ if isset .Site.Params "podcast" }}
+        <div class="footer-ad">Enjoying this content? I also co-host a <a target="_blank" href="{{ .Site.Params.podcast.url }}">podcast</a> every other week.</div>
+    {{ end }}
+
     <div class="common-footer-bottom">
         {{ if .Site.Menus.footer }}
             {{ $currentPage := . }}
