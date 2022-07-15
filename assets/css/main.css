@@ -31,8 +31,8 @@ html {
 
 body {
     margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
     color: var(--font-color);
     background: var(--bg-color);
@@ -205,7 +205,7 @@ header a {
 }
 
 header h1 {
-    font-size: 1.38em;
+    font-size: 1.4em;
     margin-top: 1em;
     margin-bottom: 0;
     font-weight: normal;
@@ -231,6 +231,8 @@ header h2 {
 
 .site-subtitle {
     white-space: nowrap;
+    font-size: 0.6em;
+    font-style: italic;
 }
 
 header nav:not(:empty){
@@ -331,6 +333,10 @@ main h1 {
     display: inline;
 }
 
+.post-title > a {
+    font-size: 0.8em;
+}
+
 .post-title.favorite::after {
     content: "☆";
     display: inline-block;
@@ -355,8 +361,8 @@ article:not(:last-of-type) {
 }
 
 article header h1 {
-    font-size: 1.25em;
-    line-height: 1.1em;
+    font-size: 1.6em;
+    line-height: 1.25em;
     margin-bottom: 0.5em;
     font-weight: 600;
     display: inline;
